@@ -144,6 +144,11 @@ img.screenshot.enlarged {
 
 img.rounded-img {
   border-radius: 10px;
+  display: none;
+}
+
+img.rounded-img.active {
+  display: block;
 }
 
 nav {
@@ -157,7 +162,7 @@ nav {
   align-items: center;
   justify-content: space-between;
   backdrop-filter: blur(10px);
-  background-color: rgba(60,56,54,0.7);
+  background-color: rgba(60, 56, 54, 0.7);
 }
 
 nav ul {
@@ -252,7 +257,7 @@ nav a:hover {
     background-color: #3c3836;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
     backdrop-filter: blur(10px);
-    background-color: rgba(60,56,54,0.7);
+    background-color: rgba(60, 56, 54, 0.7);
   }
 
   nav ul.show li {
