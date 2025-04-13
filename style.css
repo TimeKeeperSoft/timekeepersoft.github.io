@@ -147,7 +147,6 @@ img.rounded-img {
 }
 
 nav {
-  background-color: #3c3836;
   position: sticky;
   top: 0;
   left: 0;
@@ -157,6 +156,8 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  backdrop-filter: blur(10px);
+  background-color: rgba(60,56,54,0.7);
 }
 
 nav ul {
