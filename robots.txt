@@ -1,0 +1,5 @@
+
+User-agent: *
+Allow: /
+
+Sitemap: https://timekeepersoft.github.io/sitemap.xml
