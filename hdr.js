@@ -1,6 +1,6 @@
 const logoImg = document.getElementById('logo-img');
 logoImg.addEventListener('click', () => {
-    window.location.href = 'index.html';
+    window.location.href = './';
 });
 
 const screenshots = document.querySelectorAll('.screenshot');
