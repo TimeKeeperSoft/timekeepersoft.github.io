@@ -1,6 +1,15 @@
 // Mobile menu toggle
 document.getElementById('hamburger').addEventListener('click', function () {
+    this.classList.toggle('active');
     document.getElementById('main-nav').classList.toggle('active');
+    document.getElementById('nav-overlay').classList.toggle('active');
+});
+
+// Закрытие меню при клике на оверлей
+document.getElementById('nav-overlay').addEventListener('click', function () {
+    document.getElementById('hamburger').classList.remove('active');
+    document.getElementById('main-nav').classList.remove('active');
+    this.classList.remove('active');
 });
 
 // Detect OS and update download button
