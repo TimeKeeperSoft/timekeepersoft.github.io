@@ -67,7 +67,7 @@ h2.download {
 }
 
 h2.prog_header {
-  font-size: 2em;
+  font-size: 2.5em;
   /*  Увеличение размера относительно базового */
   font-weight: bold;
   /*  Жирный шрифт */
@@ -323,7 +323,7 @@ figcaption {
   display: inline-block;
   padding: 15px 30px;
   margin: 10px 0;
-  background-color: #458588;
+  background-color: #48a9ae;
   color: #282828;
   text-decoration: none;
   border-radius: 5px;
@@ -335,7 +335,7 @@ figcaption {
 }
 
 .download-button:hover {
-  background-color: #83a598;
+  background-color: #80c8ac;
   text-decoration: none;
 }
 
