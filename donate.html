@@ -2,59 +2,86 @@
 <html lang="ru">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>TimeKeeper - Поддержать разработчика</title>
-  <meta name="description" content="Отправить разработчику TimeKeeper донат">
-  <meta name="keywords"
-    content="time, timer, TimeKeeper, timekeeper, скачать, бесплатно, время, учёт времени, pomodoro, windows, linux, обратный отсчёт, таймер">
-  <link rel="stylesheet" href="style.css">
-  <link rel="icon" href="./assets/logo.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Поддержать TimeKeeper</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/donate.css">
+    <link rel="favicon" href="./assets/logo.png">
+    <link rel="icon" href="./assets/logo.png">
 </head>
 
 <body>
-  <nav>
-    <div class="nav-inner">
-      <div class="logo">
-        <img id="logo-img" src="./assets/logo.png" alt="TimeKeeper Logo" width="50">
-        <h1>TimeKeeper</h1>
-      </div>
-      <button class="menu-toggle" id="menu-toggle">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
-    </div>
-    <ul id="mainMenu">
-      <li><a href="screenshots.html">Скриншоты</a></li>
-      <li><a href="download.html">Скачать</a></li>
-      <li><a href="donate.html">Поддержать</a></li>
-      <li><a href="https://t.me/TimeKeeperSoft">Telegram</a></li>
-    </ul>
-  </nav>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <img src="logo/clock.svg" alt="TimeKeeper Logo">
+            <h1>TimeKeeper</h1>
+        </div>
+        <nav id="main-nav">
+            <a href="index.html">Главная</a>
+            <a href="screenshots.html">Скриншоты</a>
+            <a href="download.html">Скачать</a>
+            <a href="donate.html" class="active">Поддержать</a>
+            <a href="https://t.me/TimeKeeperSoft">Telegram</a>
+        </nav>
+        <div class="hamburger" id="hamburger">☰</div>
+    </header>
 
-  <div class="container">
-    <h2>Поддержать основного разработчика TimeKeeper</h2>
+    <!-- Main Content -->
+    <main class="support-page">
+        <section class="support-hero">
+            <h1>Поддержать разработчика</h1>
+            <p>TimeKeeper — это проект, разрабатываемый одним человеком в свободное время. Если программа вам нравится и
+                вы хотите поддержать её дальнейшее развитие, рассмотрите возможность сделать пожертвование. Любая сумма
+                будет принята с благодарностью!</p>
+        </section>
 
-    <p>Эту программу и её сайт создал один человек. Вы можете поддержать его,
-      отправив донат на карту:</p>
+        <section class="donation-section">
+            <h2>Способы поддержки</h2>
 
-    <blockquote>
-      2202206252335406 (Сбер)
-    </blockquote>
-  </div>
+            <div class="donation-methods">
+                <div class="donation-method">
+                    <h3>🟢 Сбербанк</h3>
+                    <p>Перевод на карту Сбербанка</p>
+                    <div class="donation-number">2202 2062 5233 5406</div>
+                </div>
+            </div>
 
-  <footer>
-    <p>Copyright (C) 2025 Michail Krasnov</p>
-    <p>
-      <a href="https://t.me/TimeKeeperSoft">Telegram</a> |
-      <a href="https://github.com/mskrasnov/TimeKeeper">GitHub</a> |
-      <a href="https://crates.io/crates/time_keeper">crates.io</a> |
-      <a href="https://flathub.org/">flathub.org</a>
-    </p>
-  </footer>
+            <p class="note">Спасибо за вашу поддержку! Она помогает мне уделять больше времени развитию TimeKeeper и
+                созданию новых функций.</p>
+        </section>
 
-  <script src="hdr.js"></script>
+        <section class="other-support">
+            <h2>Другие способы помочь</h2>
+            <p>Если вы не можете поддержать финансово, вы можете помочь другими способами:</p>
+            <ul>
+                <li>Расскажите о TimeKeeper друзьям и коллегам</li>
+                <!--<li>Оставьте отзыв на странице программы</li>-->
+                <!--<li>Предложите идеи для улучшения в нашем Telegram-чате</li>-->
+                <li>Помогите с переводом на другие языки (<a
+                        href="https://github.com/TimeKeeperSoft/TimeKeeper/tree/master/i18n">fluent</a>)</li>
+            </ul>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-info">
+                <p>© 2025 Михаил Краснов <a href="https://github.com/mskrasnov">&lt;mskrasnov&gt;</a></p>
+                <p>Простой трекер рабочего времени с напоминаниями о перерывах</p>
+            </div>
+            <div class="footer-links">
+                <a href="https://t.me/TimeKeeperSoft">Telegram</a>
+                <a href="https://crates.io/crates/timekeeper">crates.io</a>
+                <a href="https://flathub.org/apps/com.timekeeper.TimeKeeper">Flathub</a>
+                <a href="https://github.com/timekeepersoft">GitHub</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="header.js"></script>
 </body>
 
 </html>

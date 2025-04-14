@@ -1,0 +1,204 @@
+.download-page {
+    padding: 2rem 0;
+}
+
+.download-hero {
+    position: relative;
+    max-width: 900px;
+    margin: 0 auto 3rem;
+    padding: 2rem;
+    background-color: var(--bg);
+    border-radius: 10px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+    border: 1px solid var(--bg-light);
+    overflow: hidden;
+    z-index: 1;
+}
+
+.download-hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, var(--yellow), var(--orange));
+    z-index: 2;
+}
+
+.download-hero::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 300px;
+    height: 300px;
+    background-image: url('clock.svg');
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: contain;
+    z-index: -1;
+}
+
+.download-hero h1 {
+    color: var(--yellow);
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+    position: relative;
+    z-index: 3;
+}
+
+.download-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin: 2rem 0;
+    position: relative;
+    z-index: 3;
+}
+
+.download-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.8rem 1.8rem;
+    background-color: var(--blue);
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    min-width: 220px;
+}
+
+.download-btn:hover {
+    background-color: #5a9b9b;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.download-btn i {
+    margin-right: 0.5rem;
+    font-size: 1.2rem;
+}
+
+.alternative-downloads {
+    margin-top: 2rem;
+    text-align: center;
+    position: relative;
+    z-index: 3;
+}
+
+.alternative-downloads p {
+    color: var(--fg-dim);
+    margin-bottom: 1rem;
+}
+
+.secondary-btn {
+    background-color: var(--bg-light);
+    color: var(--fg);
+}
+
+.secondary-btn:hover {
+    background-color: var(--bg);
+}
+
+.info-columns {
+    display: flex;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.column {
+    flex: 1;
+    background-color: var(--bg);
+    padding: 1.5rem;
+    border-radius: 8px;
+    border: 1px solid var(--bg-light);
+}
+
+.column h2 {
+    color: var(--yellow);
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid var(--bg-light);
+}
+
+.requirements-list {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.requirements-list li {
+    padding: 0.8rem 0;
+    border-bottom: 1px solid var(--bg-light);
+    display: flex;
+}
+
+.requirements-list li:last-child {
+    border-bottom: none;
+}
+
+.requirements-list strong {
+    display: inline-block;
+    width: 150px;
+    color: var(--yellow);
+}
+
+.version-list {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.version-list li {
+    padding: 0.8rem 0;
+    border-bottom: 1px solid var(--bg-light);
+}
+
+.version-list li:last-child {
+    border-bottom: none;
+}
+
+.version-list a {
+    color: var(--blue);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.version-list a:hover {
+    color: #8ec07c;
+    text-decoration: underline;
+}
+
+.version-date {
+    color: var(--fg-dim);
+    font-size: 0.9rem;
+    margin-left: 0.5rem;
+}
+
+@media (max-width: 768px) {
+    .info-columns {
+        flex-direction: column;
+    }
+    
+    .download-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .requirements-list li {
+        flex-direction: column;
+    }
+    
+    .requirements-list strong {
+        width: auto;
+        margin-bottom: 0.3rem;
+    }
+}

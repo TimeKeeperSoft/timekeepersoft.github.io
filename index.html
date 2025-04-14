@@ -2,97 +2,95 @@
 <html lang="ru">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>TimeKeeper - Главная</title>
-  <meta name="description" content="TimeKeeper: Ваш простой таймер для работы и отдыха">
-  <meta name="keywords" content="time, timer, TimeKeeper, timekeeper, учёт времени, таймер, обратный отсчёт, pomodoro">
-  <link rel="stylesheet" href="style.css">
-  <link rel="icon" href="./assets/logo.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TimeKeeper - Таймер для тех, кто забывает отдыхать</title>
+    <meta name="description" content="TimeKeeper: Ваш простой таймер для работы и отдыха">
+    <meta name="keywords"
+        content="time, timer, TimeKeeper, timekeeper, учёт времени, таймер, обратный отсчёт, pomodoro">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="favicon" href="./assets/logo.png">
+    <link rel="icon" href="./assets/logo.png">
 </head>
 
 <body>
-  <nav>
-    <div class="nav-inner">
-      <div class="logo">
-        <img id="logo-img" src="./assets/logo.png" alt="TimeKeeper Logo" width="50">
-        <h1>TimeKeeper</h1>
-      </div>
-      <button class="menu-toggle" id="menu-toggle">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
-    </div>
-    <ul id="mainMenu">
-      <li><a href="screenshots.html">Скриншоты</a></li>
-      <li><a href="download.html">Скачать</a></li>
-      <li><a href="donate.html">Поддержать</a></li>
-      <li><a href="https://t.me/TimeKeeperSoft">Telegram</a></li>
-    </ul>
-  </nav>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <img src="logo/clock.svg" alt="TimeKeeper Logo">
+            <h1>TimeKeeper</h1>
+        </div>
+        <nav id="main-nav">
+            <a href="screenshots.html">Скриншоты</a>
+            <a href="download.html">Скачать</a>
+            <a href="donate.html" class="active">Поддержать</a>
+            <a href="https://t.me/TimeKeeperSoft">Telegram</a>
+        </nav>
+        <div class="hamburger" id="hamburger">☰</div>
+    </header>
 
-  <div class="container">
-    <div align="center">
-      <!-- <h2 class="prog_header">Трекер работы без лишних функций.</h2> -->
-      <!-- <h2 class="prog_header">Работайте продуктивнее, отдыхайте лучше.</h2> -->
-      <!-- <h2 class="prog_header">Найдите свой ритм. Простой трекер работы.</h2> -->
-      <h2 class="prog_header">Ваш персональный рабочий трекер.</h2>
-      <a href="./download.html" class="download-button">Скачать (Windows, Linux)</a>
-      <img src="./assets/a.webp" class="rounded-img">
-      <img src="./assets/b.webp" class="rounded-img">
-    </div>
+    <!-- Hero Section -->
+    <section class="hero">
+        <h2>Таймер для тех, кто забывает отдыхать</h2>
+        <div class="download-buttons">
+            <a href="#" class="download-btn" id="main-download-btn">Скачать для Windows</a>
+            <a href="download.html" class="download-btn secondary-btn">Скачать для других ОС</a>
+        </div>
+    </section>
 
-    <div align="center">
-      <blockquote>
-        <p>Управляйте своим рабочим временем эффективно. Вдохновлено Pomodoro, но еще проще!</p>
-      </blockquote>
-    </div>
+    <!-- Screenshot -->
+    <section class="screenshot-container">
+        <div class="screenshot-frame">
+            <img src="assets/b.webp" alt="TimeKeeper Screenshot">
+        </div>
+    </section>
 
-    <p>TimeKeeper — простой и эффективный инструмент для учёта рабочего времени за компьютером, вдохновлённый
-      техникой Pomodoro, но ещё проще. Забудьте о куче настроек и неудобным UI/UX с кучей лишних функций.
-      TimeKeeper фокусируется на главном: помочь вам организовать свой рабочий график путём чередования циклов
-      <i>работа/отдых</i>. Установите комфортное для вас время работы и время отдыха, а TimeKeeper позаботится
-      о том, чтобы вы чередовали их на протяжении всего дня - по принципу, напоминающему Pomodoro, но без
-      лишней сложности.
-    </p>
+    <!-- Description -->
+    <section class="description">
+        <p>TimeKeeper — минималистичный трекер рабочего времени, которые помогает соблюдать Вам баланс между работой
+            и отдыхом. Программа в указанное время будет напоминать вам сделать перерыв, чтобы вы сохраняли
+            продуктивность и избегали проблем со здоровьем.</p>
+        <p>Простой интерфейс, низкое потребление ресурсов и кроссплатформенность делают TimeKeeper идеальным выбором для
+            всех, кто работает за компьютером.</p>
+    </section>
 
-    <h2>Преимущества</h2>
-    <div class="advantages-grid">
-      <div class="advantage-tile">
-        <h3>Offline</h3>
-        <p>TimeKeeper не требует для своей работы браузера и доступа в интернет.</p>
-      </div>
-      <div class="advantage-tile">
-        <h3>Кроссплатформенность</h3>
-        <p>Наша программа корректно работает в операционных системах Windows и Linux и не зависит от крупных внешних
-          библиотек вроде GTK, Qt, KDE Frameworks и способна работать даже на слабых ПК.</p>
-      </div>
-      <div class="advantage-tile">
-        <h3>Минималистичность</h3>
-        <p>TimeKeeper занимает не более 10 Мб на диске и потребляет около 20 Мб оперативной памяти, что делает нашу
-          программу хорошим выбором на высоконагруженных системах, где каждый Мб на счету.</p>
-      </div>
-      <div class="advantage-tile">
-        <h3>Ведение статистики</h3>
-        <p>TimeKeeper способен вести локальную статистику циклов работа/отдых, чтобы пользователь имел представление о
-          том, сколько он работает и как часто нужно делать перерывы в работе.</p>
-      </div>
-    </div>
-  </div>
+    <!-- Features -->
+    <section class="features">
+        <h2>Почему TimeKeeper?</h2>
+        <div class="features-grid">
+            <div class="feature-card">
+                <h3>Минималистичный и удобный</h3>
+                <p>Ничего лишнего — только полезные напоминания о перерывах. Простой интерфейс без сложных настроек.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Работает везде</h3>
+                <p>Кроссплатформенность: Windows и Linux. Единый интерфейс на всех платформах.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Экономит ресурсы</h3>
+                <p>Потребляет минимум оперативной памяти и не нагружает систему. Работает незаметно в фоновом режиме.
+                </p>
+            </div>
+        </div>
+    </section>
 
-  <footer>
-    <p>Copyright (C) 2025 Michail Krasnov</p>
-    <p>
-      <a href="https://t.me/TimeKeeperSoft">Telegram</a> |
-      <a href="https://github.com/mskrasnov/TimeKeeper">GitHub</a> |
-      <a href="https://crates.io/crates/time_keeper">crates.io</a> |
-      <a href="https://flathub.org/">flathub.org</a>
-    </p>
-  </footer>
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-info">
+                <p>© 2025 Михаил Краснов <a href="https://github.com/mskrasnov">&lt;mskrasnov&gt;</a></p>
+                <p>Простой трекер рабочего времени с напоминаниями о перерывах</p>
+            </div>
+            <div class="footer-links">
+                <a href="https://t.me/TimeKeeperSoft">Telegram</a>
+                <a href="https://crates.io/crates/timekeeper">crates.io</a>
+                <a href="https://flathub.org/apps/com.timekeeper.TimeKeeper">Flathub</a>
+                <a href="https://github.com/timekeepersoft">GitHub</a>
+            </div>
+        </div>
+    </footer>
 
-  <script src="hdr.js"></script>
-  <script src="images.js"></script>
+    <script src="header.js"></script>
 </body>
 
 </html>

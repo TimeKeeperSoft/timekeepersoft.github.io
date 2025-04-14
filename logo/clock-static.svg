@@ -1,0 +1,40 @@
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Жёлто-оранжевый обод -->
+  <defs>
+    <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#d79921"/> <!-- жёлтый -->
+      <stop offset="100%" stop-color="#fe8019"/> <!-- оранжевый -->
+    </linearGradient>
+  </defs>
+  <circle cx="100" cy="100" r="95" fill="url(#gradient)"/>
+  
+  <!-- Основной круг -->
+  <circle cx="100" cy="100" r="85" fill="#3c3836" stroke="#504945" stroke-width="2"/>
+  
+  <!-- Внутренний круг с пунктиром -->
+  <circle cx="100" cy="100" r="70" fill="#282828" stroke="#d5c4a1" stroke-width="1.5" stroke-dasharray="2,2"/>
+  
+  <!-- Метки времени -->
+  <g stroke="#ebdbb2" stroke-width="2.5" stroke-linecap="round">
+    <line x1="100" y1="30" x2="100" y2="40"/> <!-- 12 -->
+    <line x1="170" y1="100" x2="160" y2="100"/> <!-- 3 -->
+    <line x1="100" y1="170" x2="100" y2="160"/> <!-- 6 -->
+    <line x1="30" y1="100" x2="40" y2="100"/> <!-- 9 -->
+  </g>
+  
+  <!-- Часовая стрелка (10 часов) -->
+  <line x1="100" y1="100" x2="100" y2="60" stroke="#d3869b" stroke-width="6" stroke-linecap="round"
+        transform="rotate(310,100,100)"/>
+  
+  <!-- Минутная стрелка (12 минут) -->
+  <line x1="100" y1="100" x2="100" y2="40" stroke="#83a598" stroke-width="4" stroke-linecap="round"
+        transform="rotate(62,100,100)"/>
+  
+  <!-- Секундная стрелка (3 секунды) -->
+  <line x1="100" y1="100" x2="100" y2="30" stroke="#fb4934" stroke-width="2" stroke-linecap="round"
+        transform="rotate(5,100,100)"/>
+  
+  <!-- Центральная точка -->
+  <circle cx="100" cy="100" r="8" fill="#282828" stroke="#d79921" stroke-width="2"/>
+  <circle cx="100" cy="100" r="3" fill="#fb4934"/>
+</svg>

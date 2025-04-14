@@ -2,107 +2,103 @@
 <html lang="ru">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>TimeKeeper - Скриншоты</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="icon" href="./assets/logo.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Скриншоты TimeKeeper</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/screenshots.css">
+    <link rel="favicon" href="./assets/logo.png">
+    <link rel="icon" href="./logo/clock.svg">
 </head>
 
 <body>
-  <nav>
-    <div class="nav-inner">
-      <div class="logo">
-        <img id="logo-img" src="./assets/logo.png" alt="TimeKeeper Logo" width="50">
-        <h1>TimeKeeper</h1>
-      </div>
-      <button class="menu-toggle" id="menu-toggle">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
-    </div>
-    <ul id="mainMenu">
-      <li><a href="screenshots.html">Скриншоты</a></li>
-      <li><a href="download.html">Скачать</a></li>
-      <li><a href="donate.html">Поддержать</a></li>
-      <li><a href="https://t.me/TimeKeeperSoft">Telegram</a></li>
-    </ul>
-  </nav>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <img src="logo/clock.svg" alt="TimeKeeper Logo">
+            <h1>TimeKeeper</h1>
+        </div>
+        <nav id="main-nav">
+            <a href="index.html">Главная</a>
+            <a href="screenshots.html">Скриншоты</a>
+            <a href="download.html">Скачать</a>
+            <a href="donate.html" class="active">Поддержать</a>
+            <a href="https://t.me/TimeKeeperSoft">Telegram</a>
+        </nav>
+        <div class="hamburger" id="hamburger">☰</div>
+    </header>
 
-  <div class="container">
-    <h2>TimeKeeper v0.3.0</h2>
-    <p>Первая стабильная версия программы.</p>
-  </div>
+    <!-- Main Content -->
+    <main class="screenshots-page">
+        <div class="container">
+            <h1>Скриншоты TimeKeeper</h1>
+            <p class="subtitle">Посмотрите, как выглядит TimeKeeper в работе</p>
 
-  <div class="img_container">
-    <figure>
-      <img src="./assets/v0.3.0/main_win.png" alt="Скриншот 1" class="screenshot">
-      <figcaption>Главная страница программы: время работы</figcaption>
-    </figure>
-    <figure>
-      <img src="./assets/v0.3.0/main_win2.png" alt="Скриншот 2" class="screenshot">
-      <figcaption>Главная страница программы: перерыв</figcaption>
-    </figure>
-    <figure>
-      <img src="./assets/v0.3.0/settings.png" alt="Настройки программы" class="screenshot">
-      <figcaption>Настройки программы</figcaption>
-    </figure>
-    <figure>
-      <img src="./assets/v0.3.0/time_keeper_linux.png" alt="TimeKeeper на Linux" class="screenshot">
-      <figcaption>Работа программы в elementaryOS (<a href="./assets/v0.3.0/time_keeper_linux.png">увеличить</a>)
-      </figcaption>
-    </figure>
-    <figure>
-      <img src="./assets/v0.3.0/time_keeper_win.png" alt="TimeKeeper в Windows" class="screenshot">
-      <figcaption>Работа программы в Windows 10 (<a href="./assets/v0.3.0/time_keeper_win.png">увеличить</a>)
-      </figcaption>
-    </figure>
-  </div>
+            <div class="screenshot-gallery">
+                <!-- Скриншот 1 -->
+                <div class="screenshot-item">
+                    <div class="screenshot-frame">
+                        <img src="assets/v0.3.0/main_win.png" alt="Главное окно TimeKeeper">
+                    </div>
+                    <div class="screenshot-description">
+                        <h3>Главное окно программы</h3>
+                        <p>Простой и понятный интерфейс с таймером и статистикой работы</p>
+                    </div>
+                </div>
 
-  <div class="container">
-    <h2>TimeKeeper v0.2.0</h2>
-  </div>
+                <!-- Скриншот 2 -->
+                <div class="screenshot-item">
+                    <div class="screenshot-frame">
+                        <img src="assets/v0.3.0/main_win2.png" alt="Уведомление TimeKeeper">
+                    </div>
+                    <div class="screenshot-description">
+                        <h3>Динамичный интерфейс</h3>
+                        <p>В зависимости от цикла (работа, отдых) интерфейс перекрашивается в соответствующий цвет</p>
+                    </div>
+                </div>
 
-  <div class="img_container">
-    <figure>
-      <img src="./assets/main_win.png" alt="Скриншот 1" class="screenshot">
-      <figcaption>Главная страница программы: время работы</figcaption>
-    </figure>
-    <figure>
-      <img src="./assets/main_win2.png" alt="Скриншот 2" class="screenshot">
-      <figcaption>Главная страница программы: перерыв</figcaption>
-    </figure>
-    <figure>
-      <img src="./assets/settings.png" alt="Настройки программы" class="screenshot">
-      <figcaption>Настройки программы</figcaption>
-    </figure>
-    <figure>
-      <img src="./assets/time_keeper_linux.png" alt="TimeKeeper на Linux" class="screenshot">
-      <figcaption>Работа программы в Linux Mint 19.3</figcaption>
-    </figure>
-    <figure>
-      <img src="./assets/time_keeper_win.png" alt="TimeKeeper в Windows" class="screenshot">
-      <figcaption>Работа программы в Windows 10</figcaption>
-    </figure>
-  </div>
+                <!-- Скриншот 3 -->
+                <div class="screenshot-item">
+                    <div class="screenshot-frame">
+                        <img src="assets/v0.3.0/settings.png" alt="Настройки TimeKeeper">
+                    </div>
+                    <div class="screenshot-description">
+                        <h3>Страница настроек</h3>
+                        <p>Простая настройка интервалов работы и отдыха под ваши потребности</p>
+                    </div>
+                </div>
 
-  <div class="container">
-    <h2>TimeKeeper v0.1.0</h2>
-    <p>Эта версия мало чем отличается от v0.2.0.</p>
-  </div>
+                <!-- Скриншот 4 -->
+                <div class="screenshot-item">
+                    <div class="screenshot-frame">
+                        <img src="assets/v0.3.0/time_keeper_win.png" alt="Иконка в трее TimeKeeper">
+                    </div>
+                    <div class="screenshot-description">
+                        <h3>Уведомления</h3>
+                        <p>TimeKeeper работает в свёрнутом режиме и не мешает вашей работе</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
 
-  <script src="hdr.js"></script>
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-info">
+                <p>© 2025 Михаил Краснов <a href="https://github.com/mskrasnov">&lt;mskrasnov&gt;</a></p>
+                <p>Простой трекер рабочего времени с напоминаниями о перерывах</p>
+            </div>
+            <div class="footer-links">
+                <a href="https://t.me/TimeKeeperSoft">Telegram</a>
+                <a href="https://crates.io/crates/timekeeper">crates.io</a>
+                <a href="https://flathub.org/apps/com.timekeeper.TimeKeeper">Flathub</a>
+                <a href="https://github.com/timekeepersoft">GitHub</a>
+            </div>
+        </div>
+    </footer>
 
-  <footer>
-    <p>Copyright (C) 2025 Michail Krasnov</p>
-    <p>
-      <a href="https://t.me/TimeKeeperSoft">Telegram</a> |
-      <a href="https://github.com/mskrasnov/TimeKeeper">GitHub</a> |
-      <a href="https://crates.io/crates/time_keeper">crates.io</a> |
-      <a href="https://flathub.org/">flathub.org</a>
-    </p>
-  </footer>
+    <script src="header.js"></script>
 </body>
 
 </html>

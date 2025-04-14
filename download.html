@@ -2,129 +2,135 @@
 <html lang="ru">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>TimeKeeper - Скачать</title>
-  <meta name="description" content="Скачать программу TimeKeeper бесплатно">
-  <meta name="keywords"
-    content="time, timer, TimeKeeper, timekeeper, скачать, бесплатно, время, учёт времени, pomodoro, windows, linux, обратный отсчёт, таймер">
-  <link rel="stylesheet" href="style.css">
-  <link rel="icon" href="./assets/logo.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Скачать TimeKeeper</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/download.css">
+    <link rel="favicon" href="./assets/logo.png">
+    <link rel="icon" href="./assets/logo.png">
 </head>
 
 <body>
-  <nav>
-    <div class="nav-inner">
-      <div class="logo">
-        <img id="logo-img" src="./assets/logo.png" alt="TimeKeeper Logo" width="50">
-        <h1>TimeKeeper</h1>
-      </div>
-      <button class="menu-toggle" id="menu-toggle">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
-    </div>
-    <ul id="mainMenu">
-      <li><a href="screenshots.html">Скриншоты</a></li>
-      <li><a href="download.html">Скачать</a></li>
-      <li><a href="donate.html">Поддержать</a></li>
-      <li><a href="https://t.me/TimeKeeperSoft">Telegram</a></li>
-    </ul>
-  </nav>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <img src="logo/clock.svg" alt="TimeKeeper Logo">
+            <h1>TimeKeeper</h1>
+        </div>
+        <nav id="main-nav">
+            <a href="index.html">Главная</a>
+            <a href="screenshots.html">Скриншоты</a>
+            <a href="download.html">Скачать</a>
+            <a href="donate.html" class="active">Поддержать</a>
+            <a href="https://t.me/TimeKeeperSoft">Telegram</a>
+        </nav>
+        <div class="hamburger" id="hamburger">☰</div>
+    </header>
 
-  <!--<div class="page-wrapper">-->
-  <div class="main-downl-container">
-    <div class="download-container">
-      <!-- <div class="download-content"> -->
-        <h2 class="download">Скачать TimeKeeper v0.3.1</h2>
-        <a href="https://github.com/mskrasnov/TimeKeeper/releases/download/v0.3.1/TimeKeeper-v0.3.1-WINDOWS-x86_64.zip"
-          class="download-button">Переносная вер. (Windows)</a>
-        <a href="https://github.com/mskrasnov/TimeKeeper/releases/download/v0.3.1/TimeKeeper-v0.3.1-LINUX-x86_64.zip"
-          class="download-button">Пакет (Linux)</a>
-        <p>Альтернативные загрузки (архивы):</p>
-        <div class="alternative-downloads">
-          <a href="https://github.com/mskrasnov/TimeKeeper/archive/refs/tags/v0.3.1.tar.gz"
-            class="alternative-download">Исходный код (.tgz)</a>
-          <a href="https://github.com/mskrasnov/TimeKeeper/archive/refs/tags/v0.3.1.zip"
-            class="alternative-download">Исходный код (.zip)</a>
-        <!-- </div> -->
-      </div>
-    </div>
-  </div>
+    <!-- Main Content -->
+    <main class="download-page">
+        <div class="download-hero">
+            <h1>Скачать TimeKeeper v0.3.1</h1>
 
-  <div align="right">
-    <small>Изображение взято из <a href="https://github.com/elementary/wallpapers">проекта <b>elementaryOS</b></a></small>
-  </div>
+            <div class="download-buttons">
+                <a href="https://github.com/TimeKeeperSoft/TimeKeeper/releases/download/v0.3.1/TimeKeeper-v0.3.1-WINDOWS-x86_64.zip"
+                    class="download-btn">
+                    <i>↓</i> Скачать для Windows
+                </a>
+                <a href="https://github.com/TimeKeeperSoft/TimeKeeper/releases/download/v0.3.1/TimeKeeper-v0.3.1-LINUX-x86_64.zip"
+                    class="download-btn">
+                    <i>↓</i> Скачать для Linux
+                </a>
+            </div>
 
-  <div class="info-container">
-    <div class="column">
-      <h2>Системные требования</h2>
-      <ul>
-        <li><b>Операционная система:</b> Windows 10/Linux (glibc 2.36+)</li>
-        <li><b>Оперативная память:</b> 256 Мб необходимо, 512 Мб рекомендуемо</li>
-        <li><b>Свободное место:</b> около 15-20 Мб</li>
-        <li><b>Разрешение экрана:</b> не ниже 640х480</li>
-      </ul>
-      <!-- <h2>Дополнительные ресурсы</h2> -->
-      <!-- <ul> -->
-      <!-- <li><a href="#">Документация</a></li> -->
-      <!-- <li><a href="#">Форум</a></li> -->
-      <!-- </ul> -->
-      <div align="center">
-        <a href="https://iced.rs">
-          <img alt="iced" title="iced"
-            src="https://gist.githubusercontent.com/hecrj/ad7ecd38f6e47ff3688a38c79fd108f0/raw/74384875ecbad02ae2a926425e9bcafd0695bade/color.svg"
-            width="350px">
-        </a>
-      </div>
-    </div>
-    <div class="column">
-      <h2>Предыдущие версии</h2>
+            <div class="alternative-downloads">
+                <p>Другие варианты загрузки:</p>
+                <div class="download-buttons">
+                    <a href="https://github.com/TimeKeeperSoft/TimeKeeper/archive/refs/tags/v0.3.1.tar.gz"
+                        class="download-btn secondary-btn">
+                        Исходный код (.tgz)
+                    </a>
+                    <a href="https://github.com/TimeKeeperSoft/TimeKeeper/archive/refs/tags/v0.3.1.zip"
+                        class="download-btn secondary-btn">
+                        Исходный код (.zip)
+                    </a>
+                </div>
+            </div>
+        </div>
 
-      <h3>TimeKeeper v0.2.0</h2>
-        <p>Вторая версия TimeKeeper. Добавил отображение статистики, переделал страницу настроек.</p>
-        <ul>
-          <li><a
-              href="https://github.com/mskrasnov/TimeKeeper/releases/download/v0.2.0/TimeKeeper-v0.2.0-WINDOWS-x86_64.zip">Windows
-              (x64)</a></li>
-          <li><a
-              href="https://github.com/mskrasnov/TimeKeeper/releases/download/v0.2.0/TimeKeeper-v0.2.0-LINUX-x86_64.zip">Linux
-              (x86_64)</a></li>
-          <li><a href="https://github.com/mskrasnov/TimeKeeper/archive/refs/tags/v0.2.0.tar.gz">Исходный код
-              (.tar.gz)</a></li>
-          <li><a href="https://github.com/mskrasnov/TimeKeeper/archive/refs/tags/v0.2.0.zip">Исходный код (.zip)</a>
-          </li>
-        </ul>
+        <div class="info-columns">
+            <div class="column">
+                <h2>Системные требования</h2>
+                <ul class="requirements-list">
+                    <li>
+                        <strong>Windows:</strong>
+                        <span>10/11 (64-bit)</span>
+                    </li>
+                    <li>
+                        <strong>Linux:</strong>
+                        <span>glibc 2.36+; Xorg/Wayland</span>
+                    </li>
+                    <li>
+                        <strong>Процессор:</strong>
+                        <span>x86-64</span>
+                    </li>
+                    <li>
+                        <strong>Память:</strong>
+                        <span>50 МБ ОЗУ</span>
+                    </li>
+                    <li>
+                        <strong>Место на диске:</strong>
+                        <span>10 МБ</span>
+                    </li>
+                    <li>
+                        <strong>Дополнительно:</strong>
+                        <span>Рабочая среда с поддержкой уведомлений</span>
+                    </li>
+                </ul>
+            </div>
 
-        <h3>TimeKeeper v0.1.0</h3>
-        <p>Предварительная версия TimeKeeper. Самая первая. До неё была пустота и смятение.</p>
-        <ul>
-          <li><a
-              href="https://github.com/mskrasnov/TimeKeeper/releases/download/v0.1.0/TimeKeeper-v0.1.0-WINDOWS-x86_64.zip">Windows
-              (x64)</a></li>
-          <li><a
-              href="https://github.com/mskrasnov/TimeKeeper/releases/download/v0.1.0/TimeKeeper-v0.1.0-LINUX-x86_64.zip">Linux
-              (x86_64)</a></li>
-          <li><a href="https://github.com/mskrasnov/TimeKeeper/archive/refs/tags/v0.1.0.tar.gz">Исходный код
-              (.tar.gz)</a></li>
-          <li><a href="https://github.com/mskrasnov/TimeKeeper/archive/refs/tags/v0.1.0.zip">Исходный код (.zip)</a>
-          </li>
-        </ul>
-    </div>
-  </div>
+            <div class="column">
+                <h2>Предыдущие версии</h2>
+                <ul class="version-list">
+                    <li>
+                        <a href="https://github.com/TimeKeeperSoft/TimeKeeper/releases/tag/v0.3.1">TimeKeeper v0.3.1</a>
+                        <span class="version-date">— 12 апреля 2025</span>
+                    </li>
+                    <li>
+                        <a href="https://github.com/TimeKeeperSoft/TimeKeeper/releases/tag/v0.3.0">TimeKeeper v0.3.0</a>
+                        <span class="version-date">— 12 апреля 2025</span>
+                    </li>
+                    <li>
+                        <a href="https://github.com/TimeKeeperSoft/TimeKeeper/releases/tag/v0.2.0">TimeKeeper v0.2.0</a>
+                        <span class="version-date">— 4 апреля 2025</span>
+                    </li>
+                    <li>
+                        <a href="https://github.com/TimeKeeperSoft/TimeKeeper/releases/tag/v0.1.0">TimeKeeper v0.1.0</a>
+                        <span class="version-date">— 29 марта 2025</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </main>
 
-  <footer>
-    <p>Copyright (C) 2025 Michail Krasnov</p>
-    <p>
-      <a href="https://t.me/TimeKeeperSoft">Telegram</a> |
-      <a href="https://github.com/mskrasnov/TimeKeeper">GitHub</a> |
-      <a href="https://crates.io/crates/time_keeper">crates.io</a> |
-      <a href="https://flathub.org/">flathub.org</a>
-    </p>
-  </footer>
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-info">
+                <p>© 2025 Михаил Краснов <a href="https://github.com/mskrasnov">&lt;mskrasnov&gt;</a></p>
+                <p>Простой трекер рабочего времени с напоминаниями о перерывах</p>
+            </div>
+            <div class="footer-links">
+                <a href="https://t.me/TimeKeeperSoft">Telegram</a>
+                <a href="https://crates.io/crates/timekeeper">crates.io</a>
+                <a href="https://flathub.org/apps/com.timekeeper.TimeKeeper">Flathub</a>
+                <a href="https://github.com/timekeepersoft">GitHub</a>
+            </div>
+        </div>
+    </footer>
 
-  <script src="hdr.js"></script>
+    <script src="header.js"></script>
 </body>
 
 </html>
