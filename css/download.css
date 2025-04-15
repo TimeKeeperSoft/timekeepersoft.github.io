@@ -72,6 +72,7 @@
     font-size: 1rem;
     transition: all 0.3s ease;
     min-width: 220px;
+    width: 350px;
 }
 
 .download-btn:hover {
@@ -99,6 +100,7 @@
 
 .secondary-btn {
     background-color: var(--bg-light);
+    max-width: 250px;
     color: var(--fg);
 }
 
